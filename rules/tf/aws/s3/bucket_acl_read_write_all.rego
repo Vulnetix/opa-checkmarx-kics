@@ -1,14 +1,14 @@
 # Ported from checkmarx-kics: s3_bucket_acl_allows_read_or_write_to_all_users.
 # Simplified: uses regex-based parsing on input.file_contents.
 
-package vulnetix.rules.kics_tf_aws_s3_01
+package vulnetix.rules.kics_tf_aws_s3_02
 
 import rego.v1
 
 import data.vulnetix.kics.tf
 
 metadata := {
-	"id": "KICS-TF-AWS-S3-01",
+	"id": "KICS-TF-AWS-S3-02",
 	"name": "S3 Bucket ACL should not allow public read or write access",
 	"description": "S3 Bucket ACL should be set to private. Values like 'public-read' or 'public-read-write' expose bucket contents to the public.",
 	"help_uri": "https://github.com/Checkmarx/kics",
