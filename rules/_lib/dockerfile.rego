@@ -86,8 +86,9 @@ _line_substr(content) := content if {
 } else = substring(content, 0, 40)
 
 # get_commands splits commands by && or ;
-get_commands(commands) := split(commands, "&&")
-get_commands(commands) := split(commands, "; ")
+get_commands(commands) := split(commands, "&&") if contains(commands, "&&")
+get_commands(commands) := split(commands, "; ") if contains(commands, "; ")
+get_commands(commands) := [commands]
 
 # has_instruction checks if instruction exists
 has_instruction(content, instruction_type) if {
