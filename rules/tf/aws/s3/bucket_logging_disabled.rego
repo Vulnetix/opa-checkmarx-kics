@@ -2,14 +2,14 @@
 # Ported to the Vulnetix Rego input schema (input.file_contents).
 # Checks if S3 buckets have access logging enabled.
 
-package vulnetix.rules.kics_tf_aws_s3_02
+package vulnetix.rules.kics_tf_aws_s3_03
 
 import rego.v1
 
 import data.vulnetix.kics.tf
 
 metadata := {
-	"id": "KICS-TF-AWS-S3-02",
+	"id": "KICS-TF-AWS-S3-03",
 	"name": "S3 bucket logging disabled",
 	"description": "S3 bucket access logging should be enabled for security auditing and compliance requirements.",
 	"help_uri": "https://docs.kics.io/latest/queries/terraform-queries/aws/s3-bucket-logging-disabled",
