@@ -8,7 +8,7 @@ import rego.v1
 import data.vulnetix.kics.ansible
 
 metadata := {
-	"id": "KICS-ANSIBLE-AWS-S3-002",
+	"id": "KICS-ANSIBLE-AWS-S3-003",
 	"name": "S3 bucket without versioning",
 	"description": "S3 buckets should have versioning enabled to protect against accidental deletion and provide recovery capabilities.",
 	"help_uri": "https://docs.ansible.com/ansible/latest/collections/amazon/aws/s3_bucket_module.html",
